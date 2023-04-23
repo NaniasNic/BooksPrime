@@ -17,7 +17,7 @@ export function Tab() {
                 tabBarActiveTintColor: '#121212',
 
                 tabBarStyle: {
-                    backgroundColor: '#FFF',
+                    backgroundColor: '#18181B',
                     borderTopWidth: 0
                 }
             }}
@@ -28,10 +28,10 @@ export function Tab() {
                 options={{
                     tabBarIcon: ({ color, size, focused }) => {
                         if(focused) {
-                            return <Ionicons name="home" color="#000" size={size} />
+                            return <Ionicons name="home" color="#FFF" size={size} />
                         }
 
-                        return <Ionicons name="home-outline" color="#000" size={size} />
+                        return <Ionicons name="home-outline" color="#FFF" size={size} />
                     }
                 }}
             />
@@ -42,10 +42,10 @@ export function Tab() {
                 options={{
                     tabBarIcon: ({ color, size, focused }) => {
                         if(focused) {
-                            return <Ionicons name="heart" color="#FF4141" size={size} />
+                            return <Ionicons name="bookmarks" color="#FFF" size={size} />
                         }
 
-                        return <Ionicons name="heart-outline" color="#FF4141" size={size} />
+                        return <Ionicons name="bookmarks-outline" color="#FFF" size={size} />
                     }
                 }}
             />
