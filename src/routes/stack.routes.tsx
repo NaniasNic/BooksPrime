@@ -8,21 +8,26 @@ import { Search } from "../screens/search";
 
 export function NativeStack() {
     return (
-        <Navigator
-            screenOptions={{
-                headerShown: false,
-            }}
-        >
+        <Navigator>
             <Screen 
                 name="home"
                 component={Home}
+                options={{
+                    headerShown: false,
+                }}
             />
 
             <Screen 
                 name="detail"
                 component={Detail}
                 options={{
-                    title: 'Detalhes do Livro'
+                    title: 'Detalhes do Livro',
+
+                    headerStyle: {
+                        backgroundColor: '#18181B'
+                    },
+
+                    headerTintColor: '#FFF'
                 }}
             />
 

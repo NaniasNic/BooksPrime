@@ -17,7 +17,7 @@ export function BooksList({ data }: book) {
     const navigation = useNavigation();
 
     function handleNavigation() {
-        navigation.navigate('detail')
+        navigation.navigate('detail', {data: data})
     }
 
     return (
