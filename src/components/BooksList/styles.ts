@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, PixelRatio } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
@@ -12,8 +12,8 @@ export const styles = StyleSheet.create({
         borderRadius: 16,
     },
     img: {
-        height: 400,
-        width: 250,
+        height: PixelRatio.getPixelSizeForLayoutSize(100),
+        width: PixelRatio.getPixelSizeForLayoutSize(60),
         resizeMode: 'cover'
     },
     aboutContainer: {
@@ -32,8 +32,8 @@ export const styles = StyleSheet.create({
     },
     button: {
         backgroundColor: '#000',
-        width: 150,
-        height: 54,
+        width: PixelRatio.getPixelSizeForLayoutSize(55),
+        height: PixelRatio.getPixelSizeForLayoutSize(20),
         borderBottomRightRadius: 8,
         borderBottomLeftRadius: 8,
         borderTopLeftRadius: 8,

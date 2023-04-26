@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, PixelRatio } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
         alignItems: 'center'
     },
     bookCover: {
-        height: 400,
-        width: 250,
+        height: PixelRatio.getPixelSizeForLayoutSize(130),
+        width: PixelRatio.getPixelSizeForLayoutSize(90),
         marginTop: 24
     },
     title: {

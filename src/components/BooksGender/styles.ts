@@ -1,9 +1,9 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, PixelRatio } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
-        width: 150,
-        height: 50,
+        width: PixelRatio.getPixelSizeForLayoutSize(55),
+        height: PixelRatio.getPixelSizeForLayoutSize(18),
         backgroundColor: '#000',
         justifyContent: 'center',
         alignItems: 'center',
