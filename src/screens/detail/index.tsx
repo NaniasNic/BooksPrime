@@ -36,6 +36,8 @@ export function Detail({ route }: BookProps) {
             setFavorite(bookFavorite);
         };
 
+        getStatusFavorites();
+
         navigation.setOptions({
             title: route.params?.data ? route.params?.data.name : "Detalhes do Livro",
 
