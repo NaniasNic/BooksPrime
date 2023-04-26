@@ -29,6 +29,7 @@ export const styles = StyleSheet.create({
         width: '90%',
         maxWidth: '90%',
         height: 54,
+        color: '#FFF'
     },
     notFoundText: {
         color: '#FFF'

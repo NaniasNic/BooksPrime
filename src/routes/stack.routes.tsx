@@ -35,7 +35,13 @@ export function NativeStack() {
                 name="search"
                 component={Search}
                 options={{
-                    title: 'Veja o que encontramos'
+                    title: 'Veja o que encontramos',
+                    
+                    headerStyle: {
+                        backgroundColor: '#18181B'
+                    },
+
+                    headerTintColor: '#FFF'
                 }}
             />
         </Navigator>

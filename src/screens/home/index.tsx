@@ -19,8 +19,11 @@ export function Home() {
     function handleSearch() {
         if(!inputValue) return;
 
+        const input = inputValue.toLowerCase();
+        const result = books.filter((book) => book.name.toLowerCase().includes(input));
+
         setInputValue("");
-        navigation.navigate('search');
+        navigation.navigate("search", { searchResult: {input, result} });
     }
 
     return (
