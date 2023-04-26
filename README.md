@@ -30,4 +30,5 @@
   
   <h3>Inspirações: </h3>
   <p>O designer do aplicativo e algumas partes do codigo foram tiradas do evento do canal <a href="https://youtu.be/iT1mFutEn3c">Sujeito Programador</a>.</p>
+  <p>Mas o diferencial do meu aplicativo é que está com uso de typescript e a minha "livraria" está sendo consumida totalmente de maneira local.</p>
 </article>
